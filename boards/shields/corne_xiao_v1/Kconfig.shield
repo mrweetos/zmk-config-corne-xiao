@@ -1,0 +1,5 @@
+config SHIELD_CORNE_XIAO_V1_LEFT
+    def_bool $(shields_list_contains,corne_xiao_v1_left)
+
+config SHIELD_CORNE_XIAO_V1_RIGHT
+    def_bool $(shields_list_contains,corne_xiao_v1_right)
