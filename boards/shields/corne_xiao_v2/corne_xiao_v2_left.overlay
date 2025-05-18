@@ -12,17 +12,11 @@
 };
 
 
-&i2c0 {
-    nice_view_display: nice-view@3c {
-        compatible = "solomon,ssd1306fb-i2c"; // This is the common compatible for SSD1306-based OLEDs
-        reg = <0x3c>; // 0x3c is the typical I2C address for nice!view/SSD1306 displays
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <31>;
-        reset-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>; // update pin as needed for your wiring
-        status = "okay";
+&spi1 {
+    nice_view_spi: nice_view_spi@0 {
+        compatible = "your,spi-device";
+        reg = <0>;
+        spi-max-frequency = <1000000>;
+        // Add additional required properties here.
     };
 };
