@@ -15,14 +15,14 @@
 include:
 # Revision 1
   - board: seeeduino_xiao_ble
-    shield: corne_xiao_v1_left rgbled_adapter
+    shield: corne_xiao_v1_left rgbled_adapter nice_view
     snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: corne_xiao_v1_right rgbled_adapter nice_view
 
 # Revision 2
   - board: seeeduino_xiao_ble
-    shield: corne_xiao_v2_left rgbled_adapter
+    shield: corne_xiao_v2_left rgbled_adapter nice_view
     snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: corne_xiao_v2_right rgbled_adapter nice_view
