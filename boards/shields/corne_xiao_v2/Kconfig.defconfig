@@ -14,3 +14,10 @@ config ZMK_SPLIT
     default y
 
 endif
+
+if SHIELD_CORNE_XIAO_V2_RIGHT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif
