@@ -10,3 +10,8 @@
         , <&xiao_d 7 GPIO_ACTIVE_HIGH>
         ;
 };
+
+
+&spi1 {
+    status = "okay";
+};
