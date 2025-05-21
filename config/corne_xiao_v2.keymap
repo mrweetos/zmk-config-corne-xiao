@@ -21,13 +21,6 @@
         default_layer {
             display-name = "base";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-
-            // -------------------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |                    |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |                    |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |        |  | MUTE   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |                    | ENT | RSE  | ALT |
-
             bindings = <
 &kp TAB  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &kp P  &kp BSPC  &kp LCTRL  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &kp SQT  &kp LSHFT  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &kp ESC  &lt 2 LS(MINUS)  &lt 3 SPACE  &kp SPACE  &kp PERIOD  &lt 1 ENTER  &mo 1
             >;
@@ -36,13 +29,6 @@
         SYMBOLS {
             display-name = "SYMBOLS";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-
-            // ------------------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |                    |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |                    | LFT | DWN |  UP | RGT |     |  F12 |
-            // | SHFT | F1  | F2  | F3  | F4  | F5  |        |  |  boot  |  F6 | F7  | F8  | F9  | F10 |  F11 |
-            //                    | GUI |     | SPC |                    | ENT |     | ALT |
-
             bindings = <
 &kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp F12  &kp LSHFT  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none  &bootloader  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp LALT
             >;
@@ -51,13 +37,6 @@
         KEYPAD {
             display-name = "KEYPAD";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-
-            // ------------------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |                    |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |                    |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |        |  |  boot  |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |                    | ENT |     | ALT |
-
             bindings = <
 &none  &none  &kp N7  &kp N8  &kp N9  &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &none  &none  &none  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp PIPE  &kp NON_US_BACKSLASH  &none  &none  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none  &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &none  &none  &none  &none  &none  &kp PLUS  &kp RET  &kp LESS_THAN  &kp GREATER_THAN
             >;
@@ -65,12 +44,18 @@
 
         NAVIGATION {
             display-name = "NAVIGATION";
-            status = "reserved";
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            bindings = <
+&none  &none  &kp N7  &kp N8  &kp N9  &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &none  &none  &none  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp PIPE  &kp NON_US_BACKSLASH  &none  &none  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none  &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &none  &none  &none  &none  &none  &kp PLUS  &kp RET  &kp LESS_THAN  &kp GREATER_THAN
+            >;
         };
 
         GAMING {
             display-name = "GAMING";
-            status = "reserved";
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            bindings = <
+&none  &none  &kp N7  &kp N8  &kp N9  &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &none  &none  &none  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp PIPE  &kp NON_US_BACKSLASH  &none  &none  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none  &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &none  &none  &none  &none  &none  &kp PLUS  &kp RET  &kp LESS_THAN  &kp GREATER_THAN
+            >;
         };
     };
 };
