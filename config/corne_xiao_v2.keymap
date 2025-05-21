@@ -29,7 +29,7 @@
             //                    | GUI | LWR | SPC |                    | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &kp P  &kp BSPC  &kp LCTRL  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &kp SQT  &kp LSHFT  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &kp ESC  &lt 2 MINUS  &lt 3 SPACE  &kp SPACE  &kp PERIOD  &lt 1 ENTER  &mo 1
+&kp TAB  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &kp P  &kp BSPC  &kp LCTRL  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &kp SQT  &kp LSHFT  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &kp ESC  &lt 2 LS(MINUS)  &lt 3 SPACE  &kp SPACE  &kp PERIOD  &lt 1 ENTER  &mo 1
             >;
         };
 
