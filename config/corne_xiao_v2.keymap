@@ -33,8 +33,8 @@
             >;
         };
 
-        lower_layer {
-            display-name = "lower";
+        SYMBOLS {
+            display-name = "SYMBOLS";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // ------------------------------------------------------------------------------------------------
@@ -48,8 +48,8 @@
             >;
         };
 
-        raise_layer {
-            display-name = "raise";
+        KEYPAD {
+            display-name = "KEYPAD";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 
             // ------------------------------------------------------------------------------------------------
@@ -63,13 +63,13 @@
             >;
         };
 
-        extra1 {
-            display-name = "extra1";
+        NAVIGATION {
+            display-name = "NAVIGATION";
             status = "reserved";
         };
 
-        extra2 {
-            display-name = "extra2";
+        GAMING {
+            display-name = "GAMING";
             status = "reserved";
         };
     };
