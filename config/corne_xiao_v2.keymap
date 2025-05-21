@@ -54,7 +54,7 @@
             display-name = "GAMING";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&kp TAB  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &kp P  &kp BSPC  &kp LCTRL  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &kp SQT  &kp LSHFT  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &kp ESC  &lt 2 LS(MINUS)  &lt 3 SPACE  &kp SPACE  &kp PERIOD  &lt 1 ENTER  &mo 1
+&none  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &none  &tog 0  &none  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &none  &kp LCTRL  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp PERIOD  &kp ENTER  &kp RIGHT_SHIFT
             >;
         };
     };
