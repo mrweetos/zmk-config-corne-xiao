@@ -46,7 +46,7 @@
             display-name = "NAVIGATION";
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&none  &kp ESCAPE  &kp HOME  &kp UP_ARROW  &kp END  &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &none  &none  &kp TAB  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp PIPE  &kp NON_US_BACKSLASH  &none  &none  &kp LEFT_GUI  &none  &none  &none  &none  &none  &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &none  &none  &none  &none  &none  &kp PLUS  &kp RET  &kp LESS_THAN  &kp GREATER_THAN
+&none  &kp ESCAPE  &kp HOME  &kp UP_ARROW  &kp END  &none  &none  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &none  &none  &kp TAB  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &none  &none  &kp LCTRL  &kp LEFT_SHIFT  &none  &none  &none  &none  &kp LEFT_GUI  &kp LC(LEFT_ARROW)  &none  &kp LC(RIGHT)  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans  &none  &kp RET  &kp LESS_THAN  &kp GREATER_THAN
             >;
         };
 
