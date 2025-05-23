@@ -22,7 +22,7 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&kp ESCAPE  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &kp F  &kp U  &kp P  &kp BACKSPACE  &kp DELETE  &kp TAB  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &none  &none  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &lt 2 SINGLE_QUOTE  &kp SPACE  &lt 3 MINUS  &kp PERIOD  &lt 1 ENTER  &mo 1
+&kp ESCAPE  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &kp F  &kp U  &kp P  &kp BACKSPACE  &kp DELETE  &kp TAB  &kp A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &none  &none  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &lt 2 SINGLE_QUOTE  &kp SPACE  &lt 3 MINUS  &kp PERIOD  &lt 1 ENTER  &mo 1
             >;
         };
 
