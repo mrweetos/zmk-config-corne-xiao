@@ -22,7 +22,7 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&none  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &kp P  &none  &none  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &none  &none  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &kp MINUS  &kp MINUS  &kp SPACE  &kp PERIOD  &lt 1 ENTER  &mo 1
+&kp ESCAPE  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &kp BACKSPACE  &kp DELETE  &kp TAB  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &none  &none  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &lt 2 SINGLE_QUOTE  &kp SPACE  &lt 3 LS(MINUS)  &kp PERIOD  &lt 1 ENTER  &mo 1
             >;
         };
 
@@ -30,7 +30,7 @@
             display-name = "1";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp F12  &kp LSHFT  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none  &bootloader  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp LALT
+&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp DEL  &kp BSPC  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp F12  &kp LSHFT  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none  &bootloader  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp LALT
             >;
         };
 
