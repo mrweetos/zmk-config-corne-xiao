@@ -43,8 +43,8 @@
                 <&kp LEFT_SHIFT>;
 
             label = "AGRSH";
-            wait-ms = <100>;
-            tap-ms = <100>;
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         EAC: EAC {
