@@ -1,4 +1,3 @@
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
@@ -41,9 +40,11 @@
                 <&macro_tap>,
                 <&kp A>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT>;
+                <&kp LEFT_SHIFT &kp>;
 
             label = "AGRSH";
+            wait-ms = <10>;
+            tap-ms = <10>;
         };
 
         EAC: EAC {
