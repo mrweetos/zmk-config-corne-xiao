@@ -30,11 +30,7 @@
         AGRSH: AGRSH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp RIGHT_SHIFT &kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp GRAVE &kp LS(A)>;
+            bindings = <&macro_tap>, <&kp GRAVE &kp LS(A)>;
 
             label = "AGRSH";
             wait-ms = <16>;
