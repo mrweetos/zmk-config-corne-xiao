@@ -43,7 +43,7 @@
                 <&macro_release>,
                 <&kp LEFT_SHIFT>;
 
-            label = "AGR";
+            label = "AGRSH";
         };
 
         EAC: EAC {
@@ -57,7 +57,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&QUO &kp E>;
-            label = "EAC";
+            label = "EACSH";
         };
 
         EGR: EGR {
@@ -71,7 +71,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp E>;
-            label = "EGR";
+            label = "EGRSH";
         };
 
         ECA: ECA {
@@ -85,7 +85,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp E>;
-            label = "ECA";
+            label = "ECASH";
         };
 
         ETR: ETR {
@@ -99,7 +99,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&DQU &kp E>;
-            label = "ETR";
+            label = "ETRSH";
         };
 
         UGR: UGR {
@@ -113,7 +113,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp U>;
-            label = "UGR";
+            label = "UGRSH";
         };
 
         OCA: OCA {
@@ -127,7 +127,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp O>;
-            label = "OCA";
+            label = "OCASH";
         };
 
         ICA: ICA {
@@ -141,7 +141,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp I>;
-            label = "ICA";
+            label = "ICASH";
         };
 
         ITR: ITR {
@@ -155,7 +155,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp I>;
-            label = "ITR";
+            label = "ITRSH";
         };
 
         CCE: CCE {
@@ -169,7 +169,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp C>;
-            label = "CCE";
+            label = "CCESH";
         };
 
         UCA: UCA {
@@ -183,7 +183,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp U>;
-            label = "UCA";
+            label = "UCASH";
         };
 
         QUO: QUO {
