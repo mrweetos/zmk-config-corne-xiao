@@ -28,7 +28,21 @@
             label = "AGR";
         };
 
+         AGRSH: AGRSH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp A>;
+            label = "AGR";
+        };
+
         EAC: EAC {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&QUO &kp E>;
+            label = "EAC";
+        };
+
+        EACSH: EACSH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&QUO &kp E>;
@@ -42,7 +56,21 @@
             label = "EGR";
         };
 
+        EGRSH: EGRSH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp E>;
+            label = "EGR";
+        };
+
         ECA: ECA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp E>;
+            label = "ECA";
+        };
+
+        ECASH: ECASH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp E>;
@@ -56,7 +84,21 @@
             label = "ETR";
         };
 
+        ETRSH: ETRSH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&DQU &kp E>;
+            label = "ETR";
+        };
+
         UGR: UGR {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp U>;
+            label = "UGR";
+        };
+
+        UGRSH: UGRSH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp U>;
@@ -70,7 +112,21 @@
             label = "OCA";
         };
 
+        OCASH: OCASH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp O>;
+            label = "OCA";
+        };
+
         ICA: ICA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp I>;
+            label = "ICA";
+        };
+
+        ICASH: ICASH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp I>;
@@ -82,6 +138,41 @@
             #binding-cells = <0>;
             bindings = <&kp DQT &kp I>;
             label = "ITR";
+        };
+
+        ITRSH: ITRSH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT &kp I>;
+            label = "ITR";
+        };
+
+        CCE: CCE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C>;
+            label = "CCE";
+        };
+
+        CCESH: CCESH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp C>;
+            label = "CCE";
+        };
+
+        UCA: UCA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp U>;
+            label = "UCA";
+        };
+
+        UCASH: UCASH {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp U>;
+            label = "UCA";
         };
 
         QUO: QUO {
@@ -110,19 +201,9 @@
             label = "GRA";
         };
 
-        CCE: CCE {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SQT &kp C>;
-            label = "CCE";
-        };
+        
 
-        UCA: UCA {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp CARET &kp U>;
-            label = "UCA";
-        };
+        
 
         DQU: DQU {
             compatible = "zmk,behavior-macro";
