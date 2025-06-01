@@ -40,9 +40,11 @@
                 <&macro_tap>,
                 <&kp A>,
                 <&macro_release>,
-                <&kp LEFT_SHIFT &kp>;
+                <&kp LEFT_SHIFT>;
 
             label = "AGRSH";
+            wait-ms = <100>;
+            tap-ms = <100>;
         };
 
         EAC: EAC {
