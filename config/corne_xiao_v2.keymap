@@ -49,6 +49,8 @@
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp LS(E)>;
             label = "EACSH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         EGR: EGR {
@@ -63,6 +65,8 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(E)>;
             label = "EGRSH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         ECA: ECA {
@@ -77,6 +81,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(E)>;
             label = "ECASH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         ETR: ETR {
@@ -91,6 +97,8 @@
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp LS(E)>;
             label = "ETRSH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         UGR: UGR {
@@ -105,6 +113,8 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp LS(U)>;
             label = "UGRSH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         OCA: OCA {
@@ -119,6 +129,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(O)>;
             label = "OCASH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         ICA: ICA {
@@ -133,6 +145,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(I)>;
             label = "ICASH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         ITR: ITR {
@@ -147,6 +161,8 @@
             #binding-cells = <0>;
             bindings = <&kp DQT &kp LS(I)>;
             label = "ITRSH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         CCE: CCE {
@@ -161,6 +177,8 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp LS(C)>;
             label = "CCESH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         UCA: UCA {
@@ -175,6 +193,8 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp LS(U)>;
             label = "UCASH";
+            wait-ms = <16>;
+            tap-ms = <10>;
         };
 
         QUO: QUO {
@@ -211,6 +231,15 @@
             compatible = "zmk,behavior-mod-morph";
             label = "A_GR";
             bindings = <&AGR>, <&AGRSH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_ac: e_ac {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_AC";
+            bindings = <&EAC>, <&EACSH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
