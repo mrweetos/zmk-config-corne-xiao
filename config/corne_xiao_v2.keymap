@@ -261,7 +261,7 @@
             display-name = "layer1";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&none  &kp AT_SIGN  &kp RA(NUMBER_5)  &none  &none  &none  &kp SINGLE_QUOTE  &kp PERCENT  &UGR  &UCA  &kp DEL  &none  &none  &a_gr  &kp DOLLAR  &kp HASH  &none  &none  &kp CARET  &kp TILDE  &EAC  &OCA  &ICA  &none  &none  &kp AMPERSAND  &none  &none  &CCE  &none  &none  &none  &kp GRAVE  &ECA  &EGR  &ETR  &ITR  &none  &none  &none  &none  &none  &none  &none
+&none  &kp AT_SIGN  &kp RA(NUMBER_5)  &none  &none  &none  &kp SINGLE_QUOTE  &kp PERCENT  &UGR  &UCA  &kp DEL  &none  &none  &a_gr  &kp DOLLAR  &kp HASH  &none  &none  &kp CARET  &kp TILDE  &e_ac  &OCA  &ICA  &none  &none  &kp AMPERSAND  &none  &none  &CCE  &none  &none  &none  &kp GRAVE  &ECA  &EGR  &ETR  &ITR  &none  &none  &none  &none  &none  &none  &none
             >;
         };
 
