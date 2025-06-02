@@ -40,14 +40,14 @@
         EAC: EAC {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&QUO &kp E>;
+            bindings = <&kp SINGLE_QUOTE &kp E>;
             label = "EAC";
         };
 
         EACSH: EACSH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&QUO &kp E>;
+            bindings = <&kp SINGLE_QUOTE &kp LS(E)>;
             label = "EACSH";
         };
 
@@ -61,7 +61,7 @@
         EGRSH: EGRSH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp E>;
+            bindings = <&kp GRAVE &kp LS(E)>;
             label = "EGRSH";
         };
 
@@ -75,21 +75,21 @@
         ECASH: ECASH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CARET &kp E>;
+            bindings = <&kp CARET &kp LS(E)>;
             label = "ECASH";
         };
 
         ETR: ETR {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&DQU &kp E>;
+            bindings = <&kp DOUBLE_QUOTES &kp E>;
             label = "ETR";
         };
 
         ETRSH: ETRSH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&DQU &kp E>;
+            bindings = <&kp DOUBLE_QUOTES &kp LS(E)>;
             label = "ETRSH";
         };
 
@@ -103,7 +103,7 @@
         UGRSH: UGRSH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp U>;
+            bindings = <&kp GRAVE &kp LS(U)>;
             label = "UGRSH";
         };
 
@@ -117,7 +117,7 @@
         OCASH: OCASH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CARET &kp O>;
+            bindings = <&kp CARET &kp LS(O)>;
             label = "OCASH";
         };
 
@@ -131,7 +131,7 @@
         ICASH: ICASH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CARET &kp I>;
+            bindings = <&kp CARET &kp LS(I)>;
             label = "ICASH";
         };
 
@@ -145,7 +145,7 @@
         ITRSH: ITRSH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DQT &kp I>;
+            bindings = <&kp DQT &kp LS(I)>;
             label = "ITRSH";
         };
 
@@ -159,7 +159,7 @@
         CCESH: CCESH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp C>;
+            bindings = <&kp SQT &kp LS(C)>;
             label = "CCESH";
         };
 
@@ -173,19 +173,14 @@
         UCASH: UCASH {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CARET &kp U>;
+            bindings = <&kp CARET &kp LS(U)>;
             label = "UCASH";
         };
 
         QUO: QUO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_release>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp SQT>;
-
+            bindings = <&kp SQT &kp SPACE>;
             label = "QUO";
         };
 
@@ -206,14 +201,7 @@
         DQU: DQU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_SHIFT>,
-                <&macro_tap>,
-                <&kp SQT>,
-                <&macro_release>,
-                <&kp LEFT_SHIFT>;
-
+            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
             label = "DQU";
         };
     };
