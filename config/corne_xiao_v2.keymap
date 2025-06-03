@@ -244,6 +244,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        e_gr: e_gr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_GR";
+            bindings = <&EGR>, <&EGRSH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
