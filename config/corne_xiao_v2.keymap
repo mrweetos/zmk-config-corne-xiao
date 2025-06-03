@@ -253,6 +253,86 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        e_ca: e_ca {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_CA";
+            bindings = <&ECA>, <&ECASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_ca: e_ca {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_CA";
+            bindings = <&ECA>, <&ECASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        e_tr: e_tr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "E_TR";
+            bindings = <&ETR>, <&ETRSH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        u_gr: u_gr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_GR";
+            bindings = <&UGR>, <&UGRSH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        o_ca: o_ca {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OCA_CA";
+            bindings = <&OCA>, <&OCASH>;
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        i_ca: i_ca {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_CA";
+            bindings = <&ICA>, <&ICASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        i_tr: i_tr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_TR";
+            bindings = <&ITR>, <&ITRSH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        c_ce: c_ce {
+            compatible = "zmk,behavior-mod-morph";
+            label = "C_CE";
+            bindings = <&CCE>, <&CCESH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        u_ca: u_ca {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_CA";
+            bindings = <&UCA>, <&UCASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
