@@ -334,7 +334,7 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&kp ESCAPE  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &kp F  &kp U  &kp P  &kp BACKSPACE  &kp TAB  &kp QUESTION  &kp A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &kp EXCL  &kp LEFT_PARENTHESIS  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &kp RIGHT_PARENTHESIS  &lt 2 SINGLE_QUOTE  &lt 3 SPACE  &mt LEFT_CONTROL MINUS  &mt LEFT_SHIFT PERIOD  &lt 1 DOT  &lt 1 ENTER
+&kp ESCAPE  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &kp F  &kp U  &kp P  &kp TAB  &kp BACKSPACE  &kp QUESTION  &kp A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &kp EXCL  &kp LEFT_PARENTHESIS  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &kp RIGHT_PARENTHESIS  &lt 2 SINGLE_QUOTE  &lt 3 SPACE  &mt LEFT_CONTROL MINUS  &mt LEFT_SHIFT PERIOD  &lt 1 DOT  &lt 1 ENTER
             >;
         };
 
