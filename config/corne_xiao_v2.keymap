@@ -334,7 +334,7 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&kp ESCAPE  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &kp F  &kp U  &kp P  &kp TAB  &kp BACKSPACE  &kp QUESTION  &kp A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &kp EXCL  &kp LEFT_PARENTHESIS  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &kp RIGHT_PARENTHESIS  &lt 2 SINGLE_QUOTE  &lt 3 SPACE  &mt LEFT_CONTROL MINUS  &mt LEFT_SHIFT PERIOD  &lt 1 DOT  &lt 1 ENTER
+&kp ESCAPE  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &mt LC(F) F  &kp U  &kp P  &kp TAB  &kp BACKSPACE  &kp QUESTION  &mt LC(A) A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &kp EXCL  &kp LEFT_PARENTHESIS  &kp Z  &mt LC(X) X  &kp M  &mt LC(C) C  &mt LC(V) V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &kp RIGHT_PARENTHESIS  &lt 2 SINGLE_QUOTE  &lt 3 SPACE  &mt LEFT_CONTROL MINUS  &mt LEFT_SHIFT PERIOD  &lt 1 DOT  &lt 1 ENTER
             >;
         };
 
@@ -350,7 +350,7 @@
             display-name = "layer2";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&none  &none  &kp N7  &kp N8  &kp N9  &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &none  &none  &none  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp PIPE  &kp NON_US_BACKSLASH  &none  &none  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none  &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &none  &none  &none  &none  &kp PLUS  &kp EQUAL  &kp RET  &kp LESS_THAN  &kp GREATER_THAN
+&none  &none  &kp N7  &kp N8  &kp N9  &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &none  &none  &none  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp PIPE  &kp NON_US_BACKSLASH  &none  &none  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none  &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &kp TILDE  &none  &none  &none  &kp PLUS  &kp EQUAL  &kp RET  &kp LESS_THAN  &kp GREATER_THAN
             >;
         };
 
@@ -358,7 +358,7 @@
             display-name = "layer3";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&none  &kp ESCAPE  &kp HOME  &kp UP_ARROW  &kp END  &none  &none  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &to 5  &none  &kp TAB  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &none  &none  &kp LCTRL  &kp LEFT_SHIFT  &none  &none  &none  &none  &kp LEFT_GUI  &kp LC(LEFT_ARROW)  &none  &kp LC(RIGHT)  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans  &trans  &none  &none  &none
+&none  &none  &kp HOME  &kp UP_ARROW  &kp END  &none  &none  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &to 4  &none  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &none  &none  &kp LCTRL  &kp LEFT_SHIFT  &none  &none  &none  &none  &kp LEFT_SHIFT  &kp LC(LEFT_ARROW)  &none  &kp LC(RIGHT)  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans  &trans  &none  &none  &none
             >;
         };
 
@@ -366,7 +366,7 @@
             display-name = "layer4";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&none  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &none  &to 0  &none  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &none  &kp LCTRL  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp PERIOD  &kp ENTER  &kp RIGHT_SHIFT
+&kp NUMBER_1  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &none  &to 0  &kp NUMBER_2  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &none  &kp NUMBER_3  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp ESCAPE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &kp LEFT_SHIFT  &kp SPACE  &kp MINUS  &kp PERIOD  &kp ENTER  &kp RIGHT_SHIFT
             >;
         };
 
