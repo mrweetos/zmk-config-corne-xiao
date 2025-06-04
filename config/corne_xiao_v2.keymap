@@ -343,6 +343,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        esc_lgui: esc_lgui {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ESC_LGUI";
+            bindings = <&kp ESCAPE>, <&kp LEFT_GUI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -352,7 +361,7 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&kp ESCAPE  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &mt LC(F) F  &kp U  &kp P  &kp BACKSPACE  &kp DELETE  &kp TAB  &mt LC(A) A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &question_exclamation  &kp LEFT_PARENTHESIS  &kp Z  &mt LC(X) X  &kp M  &mt LC(C) C  &mt LC(V) V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &colon_semicolon  &kp EQUAL  &kp RIGHT_PARENTHESIS  &lt 2 MINUS  &lt 3 SPACE  &mt LEFT_CONTROL SINGLE_QUOTE  &mt LEFT_SHIFT PERIOD  &lt 1 DOT  &lt 1 ENTER
+&esc_lgui  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &mt LC(F) F  &kp U  &kp P  &kp BACKSPACE  &kp DELETE  &kp TAB  &mt LC(A) A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &question_exclamation  &kp LEFT_PARENTHESIS  &kp Z  &mt LC(X) X  &kp M  &mt LC(C) C  &mt LC(V) V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &colon_semicolon  &kp EQUAL  &kp RIGHT_PARENTHESIS  &lt 2 MINUS  &lt 3 SPACE  &mt LEFT_CONTROL SINGLE_QUOTE  &mt LEFT_SHIFT PERIOD  &lt 1 DOT  &lt 1 ENTER
             >;
         };
 
