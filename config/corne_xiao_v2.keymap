@@ -352,6 +352,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        quote_dquote: quote_dquote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTE_DQUOTE";
+            bindings = <&DQU>, <&QUO>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_RSFT)>;
+        };
     };
 
     keymap {
