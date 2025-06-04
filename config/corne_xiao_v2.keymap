@@ -10,10 +10,23 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_studio_unlock {
+        Lshift_quote {
             timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&studio_unlock>;
+            key-positions = <15 40>;
+            bindings = <&DQU>;
+            layers = <0>;
+        };
+
+        Rshift_quote {
+            bindings = <&DQU>;
+            key-positions = <20 40>;
+            layers = <0>;
+        };
+
+        Tshift_quote {
+            bindings = <&DQU>;
+            key-positions = <40 41>;
+            layers = <0>;
         };
     };
 };
@@ -361,6 +374,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RSFT)>;
         };
+
+        quote_ctrl: quote_ctrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QUOTE_CTRL";
+            bindings = <&kp>, <&QUO>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -370,7 +392,7 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&esc_lgui  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &mt LC(F) F  &kp U  &kp P  &kp BACKSPACE  &kp DELETE  &kp TAB  &mt LC(A) A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &question_exclamation  &kp LEFT_PARENTHESIS  &kp Z  &mt LC(X) X  &kp M  &mt LC(C) C  &mt LC(V) V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &colon_semicolon  &kp EQUAL  &kp RIGHT_PARENTHESIS  &lt 2 MINUS  &lt 3 SPACE  &mt LEFT_CONTROL SINGLE_QUOTE  &mt LEFT_SHIFT PERIOD  &lt 1 DOT  &lt 1 ENTER
+&esc_lgui  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &mt LC(F) F  &kp U  &kp P  &kp BACKSPACE  &kp DELETE  &kp TAB  &mt LC(A) A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &question_exclamation  &kp LEFT_PARENTHESIS  &kp Z  &mt LC(X) X  &kp M  &mt LC(C) C  &mt LC(V) V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &colon_semicolon  &kp EQUAL  &kp RIGHT_PARENTHESIS  &lt 2 MINUS  &lt 3 SPACE  &quote_ctrl LEFT_CONTROL 0  &mt LEFT_SHIFT PERIOD  &lt 1 DOT  &lt 1 ENTER
             >;
         };
 
