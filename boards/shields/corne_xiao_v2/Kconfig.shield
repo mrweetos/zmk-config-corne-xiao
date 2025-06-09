@@ -3,3 +3,6 @@ config SHIELD_CORNE_XIAO_V2_LEFT
 
 config SHIELD_CORNE_XIAO_V2_RIGHT
     def_bool $(shields_list_contains,corne_xiao_v2_right)
+
+config SHIELD_CORNE_XIAO_V2_DONGLE
+    def_bool $(shields_list_contains,corne_xiao_v2_dongle)
