@@ -26,6 +26,7 @@ config BT_MAX_PAIRED
 endif
 
 
+
 if SHIELD_CORNE_XIAO_V2_LEFT
 
 config ZMK_KEYBOARD_NAME
@@ -35,6 +36,8 @@ config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
+
+
 
 if SHIELD_CORNE_XIAO_V2_LEFT || SHIELD_CORNE_XIAO_V2_RIGHT
 
