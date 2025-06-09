@@ -1,23 +1,2 @@
 #include "corne_xiao_v2.dtsi"
-#include <dt-bindings/zmk/matrix_transform.h>
-
-&corne_xiao_6col_layout {
-    transform = <&default_transform>;
-};
-
-/ {
-    chosen {
-        zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &corne_xiao_6col_layout;
-    };
-
-    mock_kscan: mock_kscan_0 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
-        col-gpios = <&gpio0 10 GPIO_ACTIVE_HIGH>;
-    };
-
-};
 
