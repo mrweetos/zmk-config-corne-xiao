@@ -392,7 +392,7 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&esc_lgui  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &mt LC(F) F  &kp U  &kp P  &kp BACKSPACE  &kp DELETE  &kp TAB  &mt LC(A) A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &question_exclamation  &kp LEFT_PARENTHESIS  &kp Z  &mt LC(X) X  &kp M  &mt LC(C) C  &mt LC(V) V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &colon_semicolon  &kp EQUAL  &kp RIGHT_PARENTHESIS  &lt 2 MINUS  &lt 3 SPACE  &quote_ctrl LEFT_CONTROL 0  &mt LEFT_SHIFT PERIOD  &kp ENTER  &lt 1 DOT
+&esc_lgui  &kp Q  &kp D  &kp R  &kp W  &mt LC(B) B  &kp J  &mt LC(F) F  &kp U  &kp P  &kp BACKSPACE  &none  &none  &mt LC(A) A  &kp S  &mt LEFT_SHIFT H  &mt LEFT_CONTROL T  &kp G  &kp Y  &mt LCTRL N  &mt RIGHT_SHIFT E  &kp O  &kp I  &question_exclamation  &none  &kp Z  &mt LC(X) X  &kp M  &mt LC(C) C  &mt LC(V) V  &none  &kp C_MUTE  &kp K  &kp L  &kp COMMA  &colon_semicolon  &kp EQUAL  &none  &lt 2 MINUS  &lt 3 SPACE  &quote_ctrl LEFT_CONTROL 0  &mt LEFT_SHIFT PERIOD  &kp ENTER  &lt 1 DOT
             >;
         };
 
@@ -416,7 +416,7 @@
             display-name = "layer3";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&none  &none  &kp HOME  &kp UP_ARROW  &kp END  &none  &none  &kp RIGHT_PARENTHESIS  &none  &none  &kp DELETE  &to 4  &none  &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &none  &none  &kp LCTRL  &kp LEFT_SHIFT  &none  &none  &none  &none  &kp LEFT_SHIFT  &kp LC(LEFT_ARROW)  &none  &kp LC(RIGHT)  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans  &trans  &none  &none  &none
+&none  &esc_lgui  &kp HOME  &kp UP_ARROW  &kp END  &kp QUESTION  &kp EXCL  &none  &none  &none  &to 4  &none  &none  &kp TAB  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LCTRL  &kp LEFT_SHIFT  &none  &none  &none  &none  &kp LEFT_SHIFT  &kp LC(LEFT_ARROW)  &none  &kp LC(RIGHT)  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans  &trans  &none  &none  &none
             >;
         };
 
@@ -424,7 +424,7 @@
             display-name = "layer4";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
-&kp NUMBER_1  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &none  &to 0  &kp NUMBER_2  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &none  &kp NUMBER_3  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp ESCAPE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &kp LEFT_SHIFT  &kp SPACE  &kp MINUS  &kp PERIOD  &kp ENTER  &kp RIGHT_SHIFT
+&none  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &to 0  &none  &none  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &none  &none  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp ESCAPE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &kp LEFT_SHIFT  &kp SPACE  &kp MINUS  &kp PERIOD  &kp ENTER  &kp RIGHT_SHIFT
             >;
         };
 
