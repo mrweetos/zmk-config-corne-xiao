@@ -1,5 +1,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <behaviors/rgbled_widget.dtsi>  // needed to use the behaviors
+// &ind_bat  indicate battery level
+// &ind_con  indicate connectivity status
 
 &mt {
     tapping-term-ms = <300>;
