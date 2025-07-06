@@ -47,7 +47,3 @@ display_spi: &spi0 {
         height = <68>;
     };
 };
-
-&pro_micro_i2c {
-    status = "disabled";
-};
