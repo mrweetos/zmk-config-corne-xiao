@@ -14,8 +14,8 @@
 ---
 include:
 #Dongle
-  - board: seeeduino_xiao_ble nice_view
-    shield: corne_xiao_v2_dongle
+  - board: seeeduino_xiao_ble
+    shield: corne_xiao_v2_dongle nice_view
     snippet: studio-rpc-usb-uart
     
 #Left
