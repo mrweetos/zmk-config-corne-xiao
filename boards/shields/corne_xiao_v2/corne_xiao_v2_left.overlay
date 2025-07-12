@@ -50,3 +50,7 @@ nice_view_spi: &spi0 {
         height = <68>;
     };
 };
+
+&xiao_i2c {
+    status = "disabled";
+};
