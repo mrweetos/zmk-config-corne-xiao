@@ -400,7 +400,7 @@
         };
 
         layer1 {
-            display-name = "layer1";
+            display-name = "Accents";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
 &none  &kp AT_SIGN  &kp RA(NUMBER_5)  &none  &none  &none  &kp SINGLE_QUOTE  &kp PERCENT  &u_gr  &u_ca  &kp DEL  &none  &none  &a_gr  &kp DOLLAR  &kp HASH  &none  &none  &kp CARET  &kp TILDE  &e_ac  &o_ca  &i_ca  &none  &none  &kp AMPERSAND  &none  &none  &c_ce  &none  &none  &none  &kp GRAVE  &e_ca  &e_gr  &e_tr  &i_tr  &none  &none  &none  &none  &none  &none  &none
@@ -408,7 +408,7 @@
         };
 
         layer2 {
-            display-name = "layer2";
+            display-name = "Maths";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
 &none  &none  &kp N7  &kp N8  &kp N9  &kp SLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &kp BACKSPACE  &none  &none  &none  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp PIPE  &kp NON_US_BACKSLASH  &none  &none  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &none  &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none  &kp TILDE  &none  &none  &none  &kp PLUS  &kp EQUAL  &kp RET  &kp LESS_THAN  &kp GREATER_THAN
@@ -416,7 +416,7 @@
         };
 
         layer3 {
-            display-name = "layer3";
+            display-name = "Arrows";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
 &none  &esc_lgui  &kp HOME  &kp UP_ARROW  &kp END  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none  &none  &to 4  &none  &none  &kp TAB  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp QUESTION  &kp EXCL  &kp LCTRL  &kp LEFT_SHIFT  &none  &none  &none  &none  &kp LEFT_SHIFT  &kp LC(LEFT_ARROW)  &none  &kp LC(RIGHT)  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &trans  &trans  &none  &none  &none
@@ -424,7 +424,7 @@
         };
 
         layer4 {
-            display-name = "layer4";
+            display-name = "Gaming";
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
             bindings = <
 &none  &kp Q  &kp D  &kp R  &kp W  &kp B  &kp J  &kp F  &kp U  &kp P  &to 0  &none  &none  &kp A  &kp S  &kp H  &kp T  &kp G  &kp Y  &kp N  &kp E  &kp O  &kp I  &none  &none  &kp Z  &kp X  &kp M  &kp C  &kp V  &none  &kp ESCAPE  &kp K  &kp L  &kp COMMA  &kp COLON  &kp EQUAL  &none  &kp LEFT_SHIFT  &kp SPACE  &kp MINUS  &kp PERIOD  &kp ENTER  &kp RIGHT_SHIFT
