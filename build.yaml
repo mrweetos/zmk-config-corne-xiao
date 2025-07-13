@@ -4,18 +4,11 @@
 # control, add individual board + shield combinations to
 # the `include` property, e.g:
 #
-# board: [ "nice_nano_v2" ]
-# shield: [ "corne_left", "corne_right" ]
-# include:
-#   - board: bdn9_rev2
-#   - board: nice_nano_v2
-#     shield: reviung41
-#
 ---
 include:
 #Dongle
   - board: seeeduino_xiao_ble
-    shield: corne_xiao_v2_dongle nice_view
+    shield: corne_xiao_v2_dongle nice_view dongle_display_view_seeeduino_xiao_ble
     snippet: studio-rpc-usb-uart
     
 #Left
