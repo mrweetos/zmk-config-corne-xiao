@@ -16,7 +16,7 @@ include:
 #Left
   - board: seeeduino_xiao_ble
     shield: corne_xiao_v2_left rgbled_adapter
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
 #Right
   - board: seeeduino_xiao_ble
