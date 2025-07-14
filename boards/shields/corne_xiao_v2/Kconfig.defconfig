@@ -1,8 +1,6 @@
 if SHIELD_CORNE_XIAO_V2_DONGLE
-
-# Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "Corne"
+    default "Hit&Run"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -20,6 +18,10 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 endif
+
+
+
+
 
 if SHIELD_CORNE_XIAO_V2_LEFT || SHIELD_CORNE_XIAO_V2_RIGHT || SHIELD_CORNE_XIAO_V2_DONGLE
 config ZMK_SPLIT
