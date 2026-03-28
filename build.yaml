@@ -9,9 +9,8 @@
 include:
 #Dongle
   - board: xiao_ble//zmk
-   # shield: corne_xiao_v2_dongle rgbled_adapter dongle_display_view_seeeduino_xiao_ble
-    shield: corne_xiao_v2_dongle rgbled_adapter
-    cmake-args: -DCONFIG_ZMK_DONGLE_DISPLAY_DONGLE_BATTERY=n -DCONFIG_ZMK_DONGLE_DISPLAY_MAC_MODIFIERS=n
+    shield: corne_xiao_v2_dongle rgbled_adapter dongle_display_view_seeeduino_xiao_ble
+    cmake-args: -DCONFIG_ZMK_DONGLE_DISPLAY_DONGLE_BATTERY=n -DCONFIG_ZMK_DONGLE_DISPLAY_MAC_MODIFIERS=n -DEXTRA_CFLAGS="-Wno-error=stringop-overflow"
     snippet: studio-rpc-usb-uart
     
 #Left
