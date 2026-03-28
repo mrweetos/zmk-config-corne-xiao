@@ -1,12 +1,10 @@
 /*
  * Copyright (c) 2024 The ZMK Contributors
- *
  * SPDX-License-Identifier: MIT
  */
 
 #include <zephyr/kernel.h>
 #include <zephyr/bluetooth/services/bas.h>
-
 #include <zephyr/logging/log.h>
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
@@ -33,57 +31,46 @@ struct battery_state {
     uint8_t level;
     bool usb_present;
 };
-    
-// In LVGL 9, canvas buffers must be strictly memory-aligned and correctly padded
-// A 256-byte array safely guarantees enough memory for a 5x8 bounding box in any color depth, with ample stride padding
-static LV_ATTRIBUTE_MEM_ALIGN uint8_t battery_image_buffer[ZMK_SPLIT_BLE_PERIPHERAL_COUNT + SOURCE_OFFSET][256];
 
-static void draw_battery_rect(lv_obj_t *canvas, int32_t x, int32_t y, int32_t w, int32_t h, bool border_only) {
-    for (int r = y; r < y + h; r++) {
-        for (int c = x; c < x + w; c++) {
-            if (border_only) {
-                if (r == y || r == y + h - 1 || c == x || c == x + w - 1) {
-                    lv_canvas_set_px(canvas, c, r, lv_color_white(), LV_OPA_COVER);
-                }
-            } else {
-                lv_canvas_set_px(canvas, c, r, lv_color_white(), LV_OPA_COVER);
-            }
-        }
-    }
-}
-
-static void draw_battery(lv_obj_t *canvas, uint8_t level, bool usb_present) {
-    lv_canvas_fill_bg(canvas, lv_color_black(), LV_OPA_COVER);
-    
-    lv_canvas_set_px(canvas, 0, 0, lv_color_white(), LV_OPA_COVER);
-    lv_canvas_set_px(canvas, 4, 0, lv_color_white(), LV_OPA_COVER);
-
-    if (level <= 10 || usb_present) {
-        draw_battery_rect(canvas, 1, 2, 3, 5, usb_present);
-    } else if (level <= 30) {
-        draw_battery_rect(canvas, 1, 2, 3, 4, false);
-    } else if (level <= 50) {
-        draw_battery_rect(canvas, 1, 2, 3, 3, false);
-    } else if (level <= 70) {
-        draw_battery_rect(canvas, 1, 2, 3, 2, false);
-    } else if (level <= 90) {
-        draw_battery_rect(canvas, 1, 2, 3, 1, false);
-    }
-}
+// Canvas dependencies removed; using native LV_OBJ wrappers mapped to ZMK_DISPLAY UI loop.
 
 static void set_battery_symbol(lv_obj_t *widget, struct battery_state state) {
-    LOG_DBG("source: %d, level: %d, usb: %d", state.source, state.level, state.usb_present);
-    lv_obj_t *symbol = lv_obj_get_child(widget, state.source * 2);
+    lv_obj_t *battery_container = lv_obj_get_child(widget, state.source * 2);
     lv_obj_t *label = lv_obj_get_child(widget, state.source * 2 + 1);
 
-    draw_battery(symbol, state.level, state.usb_present);
+    lv_obj_t *fill = lv_obj_get_child(battery_container, 0);
+
+    if (state.level <= 10 || state.usb_present) {
+        lv_obj_set_height(fill, 5);
+        if (state.usb_present) {
+            lv_obj_set_style_bg_opa(fill, LV_OPA_TRANSP, 0);
+        } else {
+            lv_obj_set_style_bg_opa(fill, LV_OPA_COVER, 0);
+        }
+    } else if (state.level <= 30) {
+        lv_obj_set_height(fill, 4);
+        lv_obj_set_style_bg_opa(fill, LV_OPA_COVER, 0);
+    } else if (state.level <= 50) {
+        lv_obj_set_height(fill, 3);
+        lv_obj_set_style_bg_opa(fill, LV_OPA_COVER, 0);
+    } else if (state.level <= 70) {
+        lv_obj_set_height(fill, 2);
+        lv_obj_set_style_bg_opa(fill, LV_OPA_COVER, 0);
+    } else if (state.level <= 90) {
+        lv_obj_set_height(fill, 1);
+        lv_obj_set_style_bg_opa(fill, LV_OPA_COVER, 0);
+    } else {
+        lv_obj_set_height(fill, 5); // Fully charged
+        lv_obj_set_style_bg_opa(fill, LV_OPA_COVER, 0);
+    }
+
     lv_label_set_text_fmt(label, "%4u%%", state.level);
     
     if (state.level > 0 || state.usb_present) {
-        lv_obj_clear_flag(symbol, LV_OBJ_FLAG_HIDDEN);
+        lv_obj_clear_flag(battery_container, LV_OBJ_FLAG_HIDDEN);
         lv_obj_clear_flag(label, LV_OBJ_FLAG_HIDDEN);
     } else {
-        lv_obj_add_flag(symbol, LV_OBJ_FLAG_HIDDEN);
+        lv_obj_add_flag(battery_container, LV_OBJ_FLAG_HIDDEN);
         lv_obj_add_flag(label, LV_OBJ_FLAG_HIDDEN);
     }
 }
@@ -127,33 +114,46 @@ ZMK_SUBSCRIPTION(widget_dongle_battery_status, zmk_peripheral_battery_state_chan
 
 #if IS_ENABLED(CONFIG_ZMK_DONGLE_DISPLAY_DONGLE_BATTERY)
 #if !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
-
 ZMK_SUBSCRIPTION(widget_dongle_battery_status, zmk_battery_state_changed);
 #if IS_ENABLED(CONFIG_USB_DEVICE_STACK)
 ZMK_SUBSCRIPTION(widget_dongle_battery_status, zmk_usb_conn_state_changed);
-#endif /* IS_ENABLED(CONFIG_USB_DEVICE_STACK) */
-#endif /* !IS_ENABLED(CONFIG_ZMK_SPLIT) || IS_ENABLED(CONFIG_ZMK_SPLIT_ROLE_CENTRAL) */
-#endif /* IS_ENABLED(CONFIG_ZMK_DONGLE_DISPLAY_DONGLE_BATTERY) */
+#endif 
+#endif 
+#endif 
 
 int zmk_widget_dongle_battery_status_init(struct zmk_widget_dongle_battery_status *widget, lv_obj_t *parent) {
     widget->obj = lv_obj_create(parent);
+    lv_obj_remove_style_all(widget->obj);
 
     lv_obj_set_size(widget->obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
     
     for (int i = 0; i < ZMK_SPLIT_BLE_PERIPHERAL_COUNT + SOURCE_OFFSET; i++) {
-        lv_obj_t *image_canvas = lv_canvas_create(widget->obj);
+        // Create an empty border for the battery casing bypassing canvas crashes
+        lv_obj_t *battery_container = lv_obj_create(widget->obj);
+        lv_obj_remove_style_all(battery_container);
+        lv_obj_set_size(battery_container, 5, 8);
+        lv_obj_set_style_border_color(battery_container, lv_color_white(), 0);
+        lv_obj_set_style_border_width(battery_container, 1, 0);
+        lv_obj_set_style_bg_opa(battery_container, LV_OPA_TRANSP, 0);
+
+        // Nested filling level
+        lv_obj_t *battery_fill = lv_obj_create(battery_container);
+        lv_obj_remove_style_all(battery_fill);
+        lv_obj_set_width(battery_fill, 3);
+        lv_obj_set_style_bg_color(battery_fill, lv_color_white(), 0);
+        lv_obj_set_style_bg_opa(battery_fill, LV_OPA_COVER, 0);
+        lv_obj_align(battery_fill, LV_ALIGN_BOTTOM_MID, 0, -1);
+
         lv_obj_t *battery_label = lv_label_create(widget->obj);
-        lv_canvas_set_buffer(image_canvas, battery_image_buffer[i], 5, 8, LV_COLOR_FORMAT_NATIVE);
 
-        lv_obj_align(image_canvas, LV_ALIGN_TOP_RIGHT, 0, i * 10);
+        lv_obj_align(battery_container, LV_ALIGN_TOP_RIGHT, 0, i * 10);
         lv_obj_align(battery_label, LV_ALIGN_TOP_RIGHT, -7, i * 10);
-
-        lv_obj_add_flag(image_canvas, LV_OBJ_FLAG_HIDDEN);
+        
+        lv_obj_add_flag(battery_container, LV_OBJ_FLAG_HIDDEN);
         lv_obj_add_flag(battery_label, LV_OBJ_FLAG_HIDDEN);
     }
 
     sys_slist_append(&widgets, &widget->node);
-
     widget_dongle_battery_status_init();
 
     return 0;
