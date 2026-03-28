@@ -29,6 +29,7 @@ const lv_image_dsc_t sym_1 = {
   .header.w = 5,
   .header.h = 6,
   .data_size = 14,
+  .header.stride = 1,
   .data = sym_1_map,
 };
 
@@ -50,6 +51,7 @@ const lv_image_dsc_t sym_2 = {
   .header.w = 5,
   .header.h = 6,
   .data_size = 14,
+  .header.stride = 1,
   .data = sym_2_map,
 };
 
@@ -71,6 +73,7 @@ const lv_image_dsc_t sym_3 = {
   .header.w = 5,
   .header.h = 6,
   .data_size = 14,
+  .header.stride = 1,
   .data = sym_3_map,
 };
 
@@ -92,6 +95,7 @@ const lv_image_dsc_t sym_4 = {
   .header.w = 5,
   .header.h = 6,
   .data_size = 14,
+  .header.stride = 1,
   .data = sym_4_map,
 };
 
@@ -113,6 +117,7 @@ const lv_image_dsc_t sym_5 = {
   .header.w = 5,
   .header.h = 6,
   .data_size = 14,
+  .header.stride = 1,
   .data = sym_5_map,
 };
 
@@ -134,6 +139,7 @@ const lv_image_dsc_t sym_ok = {
   .header.w = 5,
   .header.h = 5,
   .data_size = 13,
+  .header.stride = 1,
   .data = sym_ok_map,
 };
 
@@ -155,6 +161,7 @@ const lv_image_dsc_t sym_nok = {
   .header.w = 5,
   .header.h = 5,
   .data_size = 13,
+  .header.stride = 1,
   .data = sym_nok_map,
 };
 
@@ -176,6 +183,7 @@ const lv_image_dsc_t sym_open = {
   .header.w = 5,
   .header.h = 5,
   .data_size = 13,
+  .header.stride = 1,
   .data = sym_open_map,
 };
 
@@ -200,6 +208,7 @@ const lv_image_dsc_t sym_bt = {
   .header.w = 9,
   .header.h = 14,
   .data_size = 36,
+  .header.stride = 2,
   .data = sym_bt_map,
 };
 
@@ -224,6 +233,7 @@ const lv_image_dsc_t sym_usb = {
   .header.w = 9,
   .header.h = 14,
   .data_size = 36,
+  .header.stride = 2,
   .data = sym_usb_map,
 };
 

@@ -41,6 +41,7 @@ const lv_image_dsc_t control_icon = {
   .header.w = 14,
   .header.h = 14,
   .data_size = 36,
+  .header.stride = 2,
   .data = control_map,
 };
 
@@ -75,6 +76,7 @@ const lv_image_dsc_t shift_icon = {
   .header.w = 14,
   .header.h = 14,
   .data_size = 36,
+  .header.stride = 2,
   .data = shift_map,
 };
 
@@ -109,6 +111,7 @@ const lv_image_dsc_t alt_icon = {
   .header.w = 14,
   .header.h = 14,
   .data_size = 36,
+  .header.stride = 2,
   .data = alt_map,
 };
 
@@ -143,6 +146,7 @@ const lv_image_dsc_t win_icon = {
   .header.w = 14,
   .header.h = 14,
   .data_size = 36,
+  .header.stride = 2,
   .data = win_map,
 };
 
@@ -177,6 +181,7 @@ const lv_image_dsc_t cmd_icon = {
   .header.w = 14,
   .header.h = 14,
   .data_size = 36,
+  .header.stride = 2,
   .data = cmd_map,
 };
 
@@ -211,5 +216,6 @@ const lv_image_dsc_t opt_icon = {
   .header.w = 14,
   .header.h = 14,
   .data_size = 36,
+  .header.stride = 2,
   .data = opt_map,
 };
