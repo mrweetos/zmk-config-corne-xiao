@@ -34,7 +34,9 @@ struct battery_state {
     bool usb_present;
 };
     
-static lv_color_t battery_image_buffer[ZMK_SPLIT_BLE_PERIPHERAL_COUNT + SOURCE_OFFSET][5 * 8];
+// In LVGL 9, canvas buffers must be strictly memory-aligned and correctly padded
+// A 256-byte array safely guarantees enough memory for a 5x8 bounding box in any color depth, with ample stride padding
+static LV_ATTRIBUTE_MEM_ALIGN uint8_t battery_image_buffer[ZMK_SPLIT_BLE_PERIPHERAL_COUNT + SOURCE_OFFSET][256];
 
 static void draw_battery_rect(lv_obj_t *canvas, int32_t x, int32_t y, int32_t w, int32_t h, bool border_only) {
     for (int r = y; r < y + h; r++) {
