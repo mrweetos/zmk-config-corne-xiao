@@ -17,21 +17,21 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include "bongo_cat.h"
 
-#define SRC(array) (const void **)array, sizeof(array) / sizeof(lv_img_dsc_t *)
+#define SRC(array) (const void **)array, sizeof(array) / sizeof(lv_image_dsc_t *)
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
-LV_IMG_DECLARE(bongo_cat_none);
-LV_IMG_DECLARE(bongo_cat_left1);
-LV_IMG_DECLARE(bongo_cat_left2);
-LV_IMG_DECLARE(bongo_cat_right1);
-LV_IMG_DECLARE(bongo_cat_right2);
-LV_IMG_DECLARE(bongo_cat_both1);
-LV_IMG_DECLARE(bongo_cat_both1_open);
-LV_IMG_DECLARE(bongo_cat_both2);
+LV_IMAGE_DECLARE(bongo_cat_none);
+LV_IMAGE_DECLARE(bongo_cat_left1);
+LV_IMAGE_DECLARE(bongo_cat_left2);
+LV_IMAGE_DECLARE(bongo_cat_right1);
+LV_IMAGE_DECLARE(bongo_cat_right2);
+LV_IMAGE_DECLARE(bongo_cat_both1);
+LV_IMAGE_DECLARE(bongo_cat_both1_open);
+LV_IMAGE_DECLARE(bongo_cat_both2);
 
 #define ANIMATION_SPEED_IDLE 10000
-const lv_img_dsc_t *idle_imgs[] = {
+const lv_image_dsc_t *idle_imgs[] = {
     &bongo_cat_both1_open,
     &bongo_cat_both1_open,
     &bongo_cat_both1_open,
@@ -39,7 +39,7 @@ const lv_img_dsc_t *idle_imgs[] = {
 };
 
 #define ANIMATION_SPEED_SLOW 2000
-const lv_img_dsc_t *slow_imgs[] = {
+const lv_image_dsc_t *slow_imgs[] = {
     &bongo_cat_left1,
     &bongo_cat_both1,
     &bongo_cat_both1,
@@ -52,7 +52,7 @@ const lv_img_dsc_t *slow_imgs[] = {
 };
 
 #define ANIMATION_SPEED_MID 500
-const lv_img_dsc_t *mid_imgs[] = {
+const lv_image_dsc_t *mid_imgs[] = {
     &bongo_cat_left2,
     &bongo_cat_left1,
     &bongo_cat_none,
@@ -62,7 +62,7 @@ const lv_img_dsc_t *mid_imgs[] = {
 };
 
 #define ANIMATION_SPEED_FAST 200
-const lv_img_dsc_t *fast_imgs[] = {
+const lv_image_dsc_t *fast_imgs[] = {
     &bongo_cat_both2,
     &bongo_cat_both1,
     &bongo_cat_none,

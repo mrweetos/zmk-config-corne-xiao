@@ -47,10 +47,10 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BONGO_CAT
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t bongo_cat_none = {
+const lv_image_dsc_t bongo_cat_none = {
   .header.cf = LV_COLOR_FORMAT_I1,
-  .header.always_zero = 0,
-  .header.reserved = 0,
+  .header.magic = LV_IMAGE_HEADER_MAGIC,
+
   .header.w = 50,
   .header.h = 26,
   .data_size = 190,
@@ -93,10 +93,10 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BONGO_CAT
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t bongo_cat_left1 = {
+const lv_image_dsc_t bongo_cat_left1 = {
   .header.cf = LV_COLOR_FORMAT_I1,
-  .header.always_zero = 0,
-  .header.reserved = 0,
+  .header.magic = LV_IMAGE_HEADER_MAGIC,
+
   .header.w = 50,
   .header.h = 26,
   .data_size = 190,
@@ -139,10 +139,10 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BONGO_CAT
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t bongo_cat_left2 = {
+const lv_image_dsc_t bongo_cat_left2 = {
   .header.cf = LV_COLOR_FORMAT_I1,
-  .header.always_zero = 0,
-  .header.reserved = 0,
+  .header.magic = LV_IMAGE_HEADER_MAGIC,
+
   .header.w = 50,
   .header.h = 26,
   .data_size = 190,
@@ -185,10 +185,10 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BONGO_CAT
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t bongo_cat_right1 = {
+const lv_image_dsc_t bongo_cat_right1 = {
   .header.cf = LV_COLOR_FORMAT_I1,
-  .header.always_zero = 0,
-  .header.reserved = 0,
+  .header.magic = LV_IMAGE_HEADER_MAGIC,
+
   .header.w = 50,
   .header.h = 26,
   .data_size = 190,
@@ -231,10 +231,10 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BONGO_CAT
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t bongo_cat_right2 = {
+const lv_image_dsc_t bongo_cat_right2 = {
   .header.cf = LV_COLOR_FORMAT_I1,
-  .header.always_zero = 0,
-  .header.reserved = 0,
+  .header.magic = LV_IMAGE_HEADER_MAGIC,
+
   .header.w = 50,
   .header.h = 26,
   .data_size = 190,
@@ -277,10 +277,10 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BONGO_CAT
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t bongo_cat_both1 = {
+const lv_image_dsc_t bongo_cat_both1 = {
   .header.cf = LV_COLOR_FORMAT_I1,
-  .header.always_zero = 0,
-  .header.reserved = 0,
+  .header.magic = LV_IMAGE_HEADER_MAGIC,
+
   .header.w = 50,
   .header.h = 26,
   .data_size = 190,
@@ -323,10 +323,10 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BONGO_CAT
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t bongo_cat_both1_open = {
+const lv_image_dsc_t bongo_cat_both1_open = {
   .header.cf = LV_COLOR_FORMAT_I1,
-  .header.always_zero = 0,
-  .header.reserved = 0,
+  .header.magic = LV_IMAGE_HEADER_MAGIC,
+
   .header.w = 50,
   .header.h = 26,
   .data_size = 190,
@@ -369,10 +369,10 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_BONGO_CAT
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t bongo_cat_both2 = {
+const lv_image_dsc_t bongo_cat_both2 = {
   .header.cf = LV_COLOR_FORMAT_I1,
-  .header.always_zero = 0,
-  .header.reserved = 0,
+  .header.magic = LV_IMAGE_HEADER_MAGIC,
+
   .header.w = 50,
   .header.h = 26,
   .data_size = 190,
