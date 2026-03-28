@@ -16,6 +16,7 @@ manifest:
       revision: main
     - name: zmk-dongle-display-view
       remote: mctechnology17
-      revision: main
+      #revision: main
+      revision: v0.3.4
   self:
     path: config
